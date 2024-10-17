@@ -13,20 +13,16 @@
 
 </head>
 <body>
-    <header></header>
+    <header>
+
+    </header>
+
     <main>
     <?php include_once "views/" . ('../' . ($view ?? "index.php")); ?>
     </main>
-    <footer></footer>
+
+    <footer>
+        
+    </footer>
 </body>
 </html>
-
-<?php
-// Define la vista //
-$view = ".php";
-
-// Incluye el archivo de configuración
-require_once "config.php";
-
-// Incluye el archivo de diseño de la vista
-require_once "views/layout.php";
