@@ -1,26 +1,9 @@
 body{
+    font-size: 14px;
     background-color: rgb(63, 33, 33);
-    font-family: 'Inter', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 body h1{
     color: rgb(255, 255, 255);
     text-align: center;
-}
-body {
-    font-size: 14px;
-    color: #666666;
-    line-height: 1.7em;
-    font-weight: 400;
-    background: #8d2121;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    font-family: 'Open Sans', sans-serif;
-}
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: black;
 }
