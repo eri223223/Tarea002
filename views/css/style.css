@@ -7,17 +7,23 @@
 }
 
 body{
-    background-color: rgb(133, 131, 131);
+    background-color: rgb(255, 255, 255);
     color: #fff;
+    background-image: url("/Tarea002-/views/src/palace.jpg"); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen se mantenga fija al hacer scroll */
 }
 
 .header{
-    background-color: #666666;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90px;
     padding: 10px 5%;
+    background-color: rgba(51, 58, 71, 0.5); /* Ajusta los valores para lograr el nivel de transparencia deseado */
+    z-index: 1000; /* Asegura que el nav esté encima de otros elementos */
 }
 
 .header .logo{
@@ -59,7 +65,7 @@ body{
 
 .header .btn button{
     font-weight: 700;
-    color: #666666;
+    color: rgba(51, 58, 71, 0.5);;
     padding: 8px 22px;
     background-color: white;
     border: none;
@@ -69,6 +75,5 @@ body{
 }
 
 .header .btn button:hover{
-    color:#000;
     transform: scale(1.1);
 }
