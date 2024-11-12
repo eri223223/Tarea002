@@ -11,20 +11,24 @@
         </nav>
         <a href="#" class="btn"><button>Contacto</button></a>
     </header>
-    <a href="<?php echo APP_URL ?>aa.php/">aa</a>    
-
-    <main id="index">
-        <div class="main-top">
-        <div class="sub-top">
        
-            <div class="present"> BIENVENIDOS </div>
-            
-            <div class="sub-present">La Enciclopedia de Arte e Historia Moderna</div>
-        </div> 
-    </div>
+
+    <main id="cuerpo">
+        <div class="cabezera">
+            <div class="sub-top">
+        
+                <div class="present"> BIENVENIDOS </div>
+                
+                <div class="sub-present">La Enciclopedia de Arte e Historia Moderna</div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+               
+
+            </div> 
+        </div>
         <br><br><br><br><br><br><br><br>
 
-        <section class="hero">
+       <!-- <section class="hero">
             <div class="hero-text">
                 
                 <p id="contexto-inicio">Explora, descubre y aprende sobre los grandes movimientos artísticos y hechos históricos que dieron forma al mundo moderno.</p>
@@ -54,7 +58,7 @@
                 </div>
             </div>
 
-        </section>
+        </section>-->
 
         <br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -100,6 +104,6 @@
         </div>
      </section>
     </main>
-
+<a href="<?php echo APP_URL ?>aa.php/">aa</a> 
 </body>
 
