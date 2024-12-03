@@ -1,103 +1,111 @@
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="views/src/logo.png" alt="LODZ">
-        </div>
-        <nav>
-            <ul class="links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn"><button>Contacto</button></a>
+            <div class="logo">
+                <img src="views/src/logo.png" alt="LODZ">
+            </div>
+            <nav>
+                <ul class="links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn"><button>Contacto</button></a>
+        </header>
     </header>
-    <a href="<?php echo APP_URL ?>aa.php/">aa</a>    
 
-    <main id="index">
-        <div class="main-top">
-        <div class="sub-top">
+
+    <main id="cuerpo">
+        <div class="cabezera">
+            <div class="sub-top">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="present"> BIENVENIDOS </div>
+               
+                <div class="sub-present">La Enciclopedia de Arte e Historia Moderna</div>
+            </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="edad-media">
+            <br><br><br>
+            <h3>Edad Media</h3>
+            <br>
+            <p>El arte medieval que abarca aproximadamente desde el siglo V hasta el XV, fue <br>
+            profundamente influenciado por la religión, especialmente el cristianismo, y estuvo <br>
+            al servicio de la iglesia. Su propósito principal era educar y transmitir mensajes <br>
+            espirituales a una sociedaden gran parte analfabeta. Se caracteriza por...</p>
+            <br>
+            <a href="<?php echo APP_URL ?>views/register.php"><button class="btn-edad-media">Leer Más...</button></a>
+            <br><br><br>
+            <img src="views/src/edad-media.jpg" class="img-edad-media" alt="media">
+            <br><br><br>
+        </section>
+        <br><br><br><br>
+
+        <section id="edad-moderna">
+            <br><br><br>
+            <h3>Edad Moderna</h3>
+            <br>
+            <p>El arte de la Edad Moderna, que se desarrolla desde el siglo XV hasta el XVIII, <br>
+                refleja una etapa de cambios profundos en la sociedad y la cultura. Influenciado <br>
+                por el Renacimiento, el Barroco y el Rococó, buscó capturar la belleza de la <br>
+                naturaleza y la complejidad del ser humano. Se caracteriza por... </p>
+            <br>
+            <a href="#"><button class="btn-edad-moderna">Leer Más...</button></a>
+            <br><br><br>
+            <img src="views/src/edad-moderna.png" class="img-edad-moderna" alt="moderna">
+            <br><br><br>
+        </section>
+        <br><br><br><br>
+
+        <section id="edad-contemporanea">
+            <br><br><br>
+            <h3>Edad Contemporánea</h3>
+            <br>
+            <p>El arte de la Edad Contemporánea, que comienza a finales del siglo XVIII y llega <br>
+                hasta nuestros días, se caracteriza por su constante búsqueda de innovación y <br>
+                ruptura con las tradiciones. En este periodo surgen movimientos como el <br>
+                Impresionismo, el Cubismo y el Surrealismo, que redefinen la percepción y la <br>
+                representación de la realidad. Marcado por el contexto social, político y...</p>
+            <br>
+            <a href="#"><button class="btn-edad-contemporanea">Leer Más...</button></a>
+            <br><br><br>
+            <img src="views/src/edad-contemporanea.jpg" class="img-edad-contemporanea" alt="contemporanea">
+            <br><br><br>
+        </section>
+        <br><br><br><br>
+
+        <section id="renacimiento">
+            <br><br><br>
+            <h3>Renacimiento</h3>
+            <br>
+            <p>El arte del Renacimiento, que abarca los siglos XV y XVI, representa un renacer <br>
+                de la cultura clásica grecorromana y una exaltación del ser humano. Se <br>
+                caracteriza por el uso de la perspectiva, el equilibrio y el realismo, con un <br>
+                enfoque en la belleza, la naturaleza y la perfección anatómica. Grandes maestros <br>
+                como...</p>
+            <br>
+            <a href="#"><button class="btn-renacimiento">Leer Más...</button></a>
+            <br><br><br>
+            <img src="views/src/arte-renacentista.jpg" class="img-renacimiento" alt="renacimiento">
+            <br><br><br>
+        </section>
+        <br><br><br><br>
+
+
+
+        <footer class="footer">
+        <div id="column1">
+            <div style="display: flex; align-items: center; margin-left: 10%; width: 390px;">
+                <img src="views/src/logo.png" alt="Logo de EventoXpress" width="50" height="60" style="margin-rigth: 6px">  
+            </div>
+            <p class="oracion" style="font-size: 16px">Eleginos para poder tener la mejor experiencia <br> leyendo sobre el arte de la historia.</p>
+            <div class="social">
+                <img src="<?php echo APP_URL ?>views/icons/facebook.svg"></img>
+                <img src="<?php echo APP_URL ?>views/icons/twitterX.svg"></img>
+                <img src="<?php echo APP_URL ?>views/icons/instagram.svg"></img>
+            </div>
+        </div>
+
+            <p style="font-size: 16px;">© 2024 Todos los derechos reservados: LODZ ®</p>
        
-            <div class="present"> BIENVENIDOS </div>
-            
-            <div class="sub-present">La Enciclopedia de Arte e Historia Moderna</div>
-        </div> 
-    </div>
-        <br><br><br><br><br><br><br><br>
-
-        <section class="hero">
-            <div class="hero-text">
-                
-                <p id="contexto-inicio">Explora, descubre y aprende sobre los grandes movimientos artísticos y hechos históricos que dieron forma al mundo moderno.</p>
-                <a href="#explorar" class="cta-button">Explorar ahora</a>
-            </div> <br>
-          
-            <div class="galeria">
-                <div class="imagen">
-                    <img src="<?php echo 'views/src/arte-antiguo.png'; ?>" alt="Imagen 1">
-                    <div class="descripcion">Arte Antiguo </div>
-                </div>
-                <div class="imagen">
-                    <img src="<?php echo 'views/src/arte-clasico.png'; ?>" alt="Imagen 2">
-                    <div class="descripcion">Arte Clasico</div>
-                </div>
-                <div class="imagen">
-                    <img src="<?php echo 'views/src/arte-medieval.png'; ?>" alt="Imagen 3">
-                    <div class="descripcion">Arte medieval</div>
-                </div>
-                <div class="imagen">
-                    <img src="<?php echo 'views/src/edad-moderna.png'; ?>" alt="Imagen 4">
-                    <div class="descripcion">Edad Moderna</div>
-                </div>
-                <div class="imagen">
-                    <img src="<?php echo 'views/src/JAJASJASJSA-JHON.png'; ?>" alt="Imagen 5">
-                    <div class="descripcion">Edad Contemporanea</div>
-                </div>
-            </div>
-
-        </section>
-
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <!-- Sección de categorías destacadas -->
-        <section class="featured-categories">
-        <h2>Categorías destacadas</h2>
-        <div class="categories-container">
-            <div class="category-card">
-                <img src="arte.jpg" alt="Categoría Arte">
-                <h3>Arte</h3>
-                <p>Explora las principales obras de arte y movimientos artísticos.</p>
-            </div>
-            <div class="category-card">
-                <img src="historia.jpg" alt="Categoría Historia">
-                <h3>Historia</h3>
-                <p>Sumérgete en los eventos históricos más importantes.</p>
-            </div>
-            <div class="category-card">
-                <img src="colecciones.jpg" alt="Categoría Colecciones">
-                <h3>Colecciones</h3>
-                <p>Descubre colecciones de arte y documentos históricos únicos.</p>
-            </div>
-        </div>
-        </section>
-
-        <!-- Sección de novedades -->
-        <section class="latest-news">
-        <h2>Novedades</h2>
-        <div class="news-container">
-            <article class="news-item">
-                <img src="noticia1.jpg" alt="Noticia 1">
-                <h3>Exposición sobre el Renacimiento</h3>
-                <p>Una nueva exposición de arte renacentista ha llegado a nuestra enciclopedia.</p>
-                <a href="#">Leer más</a>
-            </article>
-            <article class="news-item">
-                <img src="noticia2.jpg" alt="Noticia 2">
-                <h3>El legado de las civilizaciones antiguas</h3>
-                <p>Explora cómo las civilizaciones antiguas influenciaron el arte moderno.</p>
-                <a href="#">Leer más</a>
-            </article>
-        </div>
-     </section>
+    </footer>
     </main>
-
 </body>
-
