@@ -1,20 +1,4 @@
-<body>
-    <header class="header">
-            <div class="logo">
-                <img src="views/src/logo.png" alt="LODZ">
-            </div>
-            <nav>
-                <ul class="links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="btn"><button>Contacto</button></a>
-        </header>
-    </header>
-
-
-    <main id="cuerpo">
+<main id="cuerpo">
         <div class="cabezera">
             <div class="sub-top">
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -88,24 +72,5 @@
             <br><br><br>
         </section>
         <br><br><br><br>
+</main>
 
-
-
-        <footer class="footer">
-        <div id="column1">
-            <div style="display: flex; align-items: center; margin-left: 10%; width: 390px;">
-                <img src="views/src/logo.png" alt="Logo de EventoXpress" width="50" height="60" style="margin-rigth: 6px">  
-            </div>
-            <p class="oracion" style="font-size: 16px">Eleginos para poder tener la mejor experiencia <br> leyendo sobre el arte de la historia.</p>
-            <div class="social">
-                <img src="<?php echo APP_URL ?>views/icons/facebook.svg"></img>
-                <img src="<?php echo APP_URL ?>views/icons/twitterX.svg"></img>
-                <img src="<?php echo APP_URL ?>views/icons/instagram.svg"></img>
-            </div>
-        </div>
-
-            <p style="font-size: 16px;">© 2024 Todos los derechos reservados: LODZ ®</p>
-       
-    </footer>
-    </main>
-</body>
