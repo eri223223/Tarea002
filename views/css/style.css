@@ -59,9 +59,10 @@ body{
     text-decoration: none;
 }
 
+/*
 .header .links li a:hover{
     color: black;
-}
+}*/
 
 .header .btn button{
     font-weight: 700;
@@ -78,110 +79,187 @@ body{
     transform: scale(1.1);
 }
 
-  main#index .main-top {
-    
-    height: 100%;
-   
-}
-main#index .sub-top {
-    width: 1000px;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con 70% de opacidad */
-    display: flex; /* Mantén flexbox para centrado */
-    flex-direction: column; /* Apila los elementos verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    align-items:flex-end; /* Centra verticalmente */
-    color: white; /* Asegura que el texto se vea blanco */
+#cuerpo .present{
     text-align: center;
-    padding: 0% 2% 0% 0%;
-    margin: 19% 0% 0% 0%;
-    
+    font-weight: 600;
+    font-size: 70px;
 }
 
-main#index .main-top .present {
-    font-size: 40px;
-    font-family: "Playfair Display", serif;
-    margin-bottom: 10px; /* Espacio debajo del título */
-}
 
-main#index .main-top .sub-present {
-    font-size: 20px;
-    font-family: "Playfair Display", serif;
-}
-main#index .hero {
-   /* height: 1000px;
-    background-color: rgb(0, 0, 0);  Fondo negro con 70% de opacidad */
-    margin: 20px  0px 5px 20px ;
-    padding: 20px  15px 0px 15px;
-    color: rgb(255, 255, 255); /* Asegura que el texto se vea blanco */
+#cuerpo .sub-present{
     text-align: center;
-}
-main#index .hero #contexto-inicio{
-    background-color: rgba(0, 0, 0, 0.87);
-    font-size: 30px;
-    font-family: "Playfair Display", serif;
-    padding: 10px 60px 10px 60px;
-}
-main#index .featured-categories{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0); /* Fondo negro con 70% de opacidad */
-    margin: 20px auto;
-    padding: 20px;
-    color: rgba(255, 255, 255, 0.925); /* Asegura que el texto se vea blanco */
-    text-align: center;
-    
-}
-
-main#index .galeria {
-    background-color: rgba(44, 44, 44, 0.596);
-    display: flex;
-    flex-wrap: nowrap; /* No permitir el ajuste a la siguiente línea */
-    justify-content: center;
-    overflow: hidden; /* Ocultar el desbordamiento */
-    
-}
-
-main#index .imagen {
-    position: relative;
-    width: 25%; /* Ancho reducido de la imagen */
-    height: 500px; /* Alto de la imagen */
-    margin: 0px; /* Espacio entre imágenes */
-    transition: width 0.5s ease, opacity 0.5s ease; /* Transiciones para el efecto */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
-}
-
-main#index .imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta la imagen */
-}
-
-main#index .descripcion {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
-    color: white;
     padding: 10px;
-    transform: translateY(100%); /* Esconde el texto inicialmente */
-    transition: transform 0.3s ease; /* Transición para el texto */
-    text-align: center;
+    font-weight: 500;
 }
 
-main#index .imagen:hover {
-   width: 100%;/* Aumenta el tamaño de la imagen al pasar el mouse */
-    z-index: 1; /* Lleva la imagen al frente */
+
+#edad-media{
+    background-color:  rgba(0, 0, 0, 0.5);
+    overflow: auto; /* Asegura que el contenedor se ajuste al contenido flotante */
+    padding-left: 78px;
+    padding-top: 20px;
 }
 
-main#index .imagen:hover .descripcion {
-    transform: translateY(0); /* Muestra el texto al pasar el mouse */
+#edad-media h3{
+    font-size: 30px;
 }
 
-/* Reduce el tamaño de las imágenes que no están activas */
-main#index .imagen:not(:hover) {
-  
-    opacity: 0.5; /* Opcional: reduce la opacidad de las imágenes no activas */
-    transition: opacity 0.5s ease;
+#edad-media .img-edad-media {
+    float: right; /* Mueve la imagen a la derecha */
+    margin: 50px; /* Ajusta los márgenes para darle espacio */
+    width: 470px;
+    height: 270px;
+    object-fit: cover;
+    display: block; /* Mejora la compatibilidad */
+    margin-top: -240px; /* Sube la imagen */    
+}
+
+#edad-media .btn-edad-media{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    width: 190px;
+    height: 50px;
+    border-radius: 13px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
+#edad-moderna{
+    background-color:  rgba(0, 0, 0, 0.5);
+    overflow: auto; /* Asegura que el contenedor se ajuste al contenido flotante */
+    padding-left: 78px;
+    padding-top: 20px;
+}
+
+#edad-moderna h3{
+    font-size: 30px;
+}
+
+#edad-moderna .img-edad-moderna{
+    float: right; /* Mueve la imagen a la derecha */
+    margin: 50px; /* Ajusta los márgenes para darle espacio */
+    width: 470px;
+    height: 270px;
+    object-fit: cover;
+    display: block; /* Mejora la compatibilidad */
+    margin-top: -240px; /* Sube la imagen */    
+}
+
+#edad-moderna .btn-edad-moderna{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    width: 190px;
+    height: 50px;
+    border-radius: 13px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
+#edad-contemporanea{
+    background-color:  rgba(0, 0, 0, 0.5);
+    overflow: auto; /* Asegura que el contenedor se ajuste al contenido flotante */
+    padding-left: 78px;
+    padding-top: 20px;
+}
+
+#edad-contemporanea h3{
+    font-size: 30px;
+}
+
+#edad-contemporanea .img-edad-contemporanea{
+    float: right; /* Mueve la imagen a la derecha */
+    margin: 50px; /* Ajusta los márgenes para darle espacio */
+    width: 470px;
+    height: 270px;
+    object-fit: cover;
+    display: block; /* Mejora la compatibilidad */
+    margin-top: -240px; /* Sube la imagen */    
+}
+
+#edad-contemporanea .btn-edad-contemporanea{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    width: 190px;
+    height: 50px;
+    border-radius: 13px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+#renacimiento{
+    background-color:  rgba(0, 0, 0, 0.5);
+    overflow: auto; /* Asegura que el contenedor se ajuste al contenido flotante */
+    padding-left: 78px;
+    padding-top: 20px;
+}
+
+#renacimiento h3{
+    font-size: 30px;
+}
+
+#renacimiento .img-renacimiento{
+    float: right; /* Mueve la imagen a la derecha */
+    margin: 50px; /* Ajusta los márgenes para darle espacio */
+    width: 470px;
+    height: 270px;
+    object-fit: cover;
+    display: block; /* Mejora la compatibilidad */
+    margin-top: -240px; /* Sube la imagen */    
+}
+
+#renacimiento .btn-renacimiento{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    width: 190px;
+    height: 50px;
+    border-radius: 13px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 380px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+
+.footer #column1 .oracion {
+    margin-top: -45px;
+    margin-left: 140px;
+    
+
+}
+
+.footer #column1 .social {
+    margin: 50px;
+    display: flex;
+    gap: 35px; /* 10px de espacio entre cada elemento */
+    cursor: pointer;
+}
+
+.footer p{
+    margin-left: -480px;
+    margin-top: 195px;
 }
