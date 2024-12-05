@@ -15,11 +15,11 @@
                 <br><br>
                 <button type="submit">Registrarme</button>
             </form>
-            <a href="#">
-                <p class="estas">¿Ya Estás Registrado?</p>
-            </a>
+
+            <a href="login.php"><p class="estas">¿Ya Estás Registrado?</p> </a>
+          
         </main>
 
     </div>
-
+ 
 </main>

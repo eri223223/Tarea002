@@ -7,7 +7,7 @@ define('DB_NAME', '');   // Nombre de la base de datos
 define('APP_URL', 'Tarea002-/../');   // URL de la aplicación
 
 // Acá va la conexión a la base de datos
-$conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+//$conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 
 // Verificar la conexión
 // if (!$conn) {
