@@ -11,12 +11,12 @@
             <br><br><br>
             <h3>Edad Media</h3>
             <br>
-            <p>El arte medieval que abarca aproximadamente desde el siglo V hasta el XV, fue <br>
-            profundamente influenciado por la religión, especialmente el cristianismo, y estuvo <br>
-            al servicio de la iglesia. Su propósito principal era educar y transmitir mensajes <br>
-            espirituales a una sociedaden gran parte analfabeta. Se caracteriza por...</p>
+            <p>La Edad Media, también conocida como período medieval, abarcó aproximadamente <br>
+            del siglo V al XV en la historia europea. Durante esta época, el arte jugó un papel <br>
+            importante y las pinturas sirvieron para diversos fines, como la devoción religiosa, <br>
+            la narración de...</p>
             <br>
-            <a href="<?php echo APP_URL ?>views/register.php"><button class="btn-edad-media">Leer Más...</button></a>
+            <a href="<?php echo APP_URL ?>views/edad_media.php"><button class="btn-edad-media">Leer Más...</button></a>
             <br><br><br>
             <img src="views/src/edad-media.jpg" class="img-edad-media" alt="media">
             <br><br><br>
