@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-12-2024 a las 15:11:49
+-- Tiempo de generación: 08-12-2024 a las 17:35:17
 -- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.1.25
+-- Versión de PHP: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,19 +40,12 @@ CREATE TABLE `pinturas-edad-media` (
 --
 
 CREATE TABLE `usuarios` (
-  `id` int(60) NOT NULL,
-  `nombreUsuario` varchar(60) NOT NULL,
+  `id` int(4) NOT NULL,
+  `user_name` varchar(60) NOT NULL,
   `email` varchar(60) NOT NULL,
-  `contraseña` varchar(60) NOT NULL,
-  `con-contraseña` varchar(60) NOT NULL
+  `phone` varchar(60) NOT NULL,
+  `password` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `usuarios`
---
-
-INSERT INTO `usuarios` (`id`, `nombreUsuario`, `email`, `contraseña`, `con-contraseña`) VALUES
-(1, 'serenito', 'serenito@gmail.com', 'serenito123', 'serenito123');
 
 --
 -- Índices para tablas volcadas
@@ -63,6 +56,16 @@ INSERT INTO `usuarios` (`id`, `nombreUsuario`, `email`, `contraseña`, `con-cont
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

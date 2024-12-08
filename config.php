@@ -4,7 +4,7 @@ define('DB_SERVER', 'localhost');
 define('DB_USER', 'root');   // Nombre de usuario de la base de datos
 define('DB_PASS', '');   // Contraseña de la base de datos
 define('DB_NAME', 'tarea002');
-define('APP_URL', 'tarea002/');   // URL de la aplicación
+define('APP_URL', 'tarea002/../');   // URL de la aplicación
 session_start();
 
 $conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
