@@ -5,21 +5,26 @@
             <p>Registra tu cuenta para seguir leyendo sobre el arte de la historia.</p>
             <br>
         </header>
-        <main class="registrate">
-            <form action="#">
+        <div class="registrate">
+            <form action="driver_register.php" method="POST">
                 <input type="text" name="username" placeholder="Nombre de Usuario" required>
                 <br><br>
                 <input type="email" name="email" placeholder="Correo Eléctrónico" required>
-                <br><br>
-                <input type="password" name="password" placeholder="Contraseña" required>
-                <br><br>
+                <br>  
+                <input type="tel" name="phone" placeholder="Télefono" required>
+                <br>
+                <input type="password" name="password" placeholder="Ingrese Una Contraseña" required>
+                <br>
+                <input type="password" name="password_repeat" placeholder="Repetir Contraseña" required>
+                <br>
+             
                 <button type="submit">Registrarme</button>
             </form>
-
+            
             <a href="login.php"><p class="estas">¿Ya Estás Registrado?</p> </a>
           
-        </main>
+        </div>
 
     </div>
  
-</main>
+</main>        

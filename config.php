@@ -1,20 +1,18 @@
-<?php
+<?php 
 // Definición de las constantes de configuración para la base de datos
-define('DB_SERVER', 'localhost');   // Nombre del servidor de la base de datos
+define('DB_SERVER', 'localhost');
 define('DB_USER', 'root');   // Nombre de usuario de la base de datos
 define('DB_PASS', '');   // Contraseña de la base de datos
-define('DB_NAME', '');   // Nombre de la base de datos
-define('APP_URL', 'Tarea002-/../');   // URL de la aplicación
+define('DB_NAME', 'tarea002');
+define('APP_URL', 'tarea002/');   // URL de la aplicación
+session_start();
 
+$conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
 // Acá va la conexión a la base de datos
-//$conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+// Ejemplo de conexión (descomentar y completar según el sistema de base de datos usado):
+ $conn = new mysqli('localhost', DB_USER, DB_PASS, 'tarea002');
 
-// Verificar la conexión
-// if (!$conn) {
-//     die("Conexión fallida: " . mysqli_connect_error());
-// } else {
-//     echo "Conexión exitosa a la base de datos.";
-// }
-
-// Cerrar la conexión al final del script si es necesario
-// mysqli_close($conn);
+ //Verificar la conexión
+ if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+ }
