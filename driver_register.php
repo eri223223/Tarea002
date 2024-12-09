@@ -1,34 +1,41 @@
-<?php
-require_once "config.php";
+<?php 
 
-$username = $_POST['username'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$password = $_POST['password'];
-$password_repeat = $_POST['password_repeat'];
+$Nusu = $_POST['Nusu'];
+$Email = $_POST['email'];
+$Clave = $_POST['clave'];
 
+echo "el sr/a ".$Nusu." ".$Email." tiene ".$Clave." años";
+echo "<br>";
 
+// datos de la DB
+$servidor = "localhost";
+$usuario = "root";
+$clave = "";
+$base = "tarea002";
 
+// conexion a DB
+$ResConec = mysqli_connect($servidor,$usuario,$clave,$base);
 
-if (isset($username) && isset($email) && isset($phone) && isset($password) && isset($password_repeat)){
-    if($password == $password_repeat){
-        $cons = "SELECT * FROM usuarios WHERE email = '" . $_POST['email'] . "'";
-        $per = mysqli_query($conn, $cons);
-        
-        if(mysqli_num_rows($per) == 1){
-            header('Location: register.php?error=este%20gmail%20esta%20repetido');
-        }else{
-            $cad = "INSERT INTO usuarios (id, user_name, email, phone, password) VALUES (NULL,'$username', '$email', '$phone', '$hashed_password')";
-  
-            mysqli_query($conn, $cad);
-    
-            header("Location: successful_registration.php");
+if($ResConec){
+	echo "el acceso a la DB ha sido exitoso";
+	echo "<br>";
+   }else{
+   	echo "el acceso a la DB ha fallado";
+   	echo "<br>";
         }
-    }
-    else{
-        header("Location:register.php?error=La%20contraseña%20no%20es%20la%20misma");
-    }
-}
+// creacion de la cadena SQL
+$cadena = "INSERT INTO usuarios(usuario, email, clave) VALUES ('$Nusu','$Email','$Clave')";
 
+// operacion SQL INSERT
+$ResConsIns = MySqli_query( $ResConec , $cadena );
 
-?>
+if($ResConsIns){
+	echo "la insercion a la DB ha sido exitosa";
+	echo "<br>";
+   }else{
+   	echo "la insercion a la DB ha fallado";
+   	echo "<br>";
+        }
+ ?>
+
+ <a href="formu-altas.php">Volver</a>

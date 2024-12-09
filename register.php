@@ -12,3 +12,5 @@ $view = "register.php";
 
 // Incluye el archivo de diseño de la vista
 require_once "views/layout.php";
+
+?>
