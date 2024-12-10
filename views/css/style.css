@@ -94,7 +94,7 @@ body{
 
 
 #edad-media{
-    background-color:  rgba(0, 0, 0, 0.5);
+    
     overflow: auto; /* Asegura que el contenedor se ajuste al contenido flotante */
     padding-left: 78px;
     padding-top: 20px;
