@@ -16,7 +16,7 @@
             importante y las pinturas sirvieron para diversos fines, como la devoción religiosa, <br>
             la narración de...</p>
             <br>
-            <a href="<?php echo APP_URL ?>views/edad-media.php"><button class="btn-edad-media">Leer Más...</button></a>
+            <a href="<?php echo APP_URL ?>edad_media.php"><button class="btn-edad-media">Leer Más...</button></a>
             <br><br><br>
             <img src="views/src/edad-media.jpg" class="img-edad-media" alt="media">
             <br><br><br>
@@ -37,6 +37,7 @@
             <img src="views/src/edad-moderna.png" class="img-edad-moderna" alt="moderna">
             <br><br><br>
         </section>
+        
         <br><br><br><br>
 
         <section id="edad-contemporanea">
