@@ -1,7 +1,5 @@
-<main id="edad-media" styles="text-aling: center;" > 
-
-    <h1> La Edad Media En El Arte </h1>
-
+<main id="edad-media">
+    <h3>Pinturas de la Edad Media</h3>
     <article style="margin-right: 120px; margin-left: 120px; margin: 80px; background-color: #000000d9;    color: white;   padding: 40px;    border-radius: 25px;
 ">
         
@@ -12,50 +10,51 @@
             devoción religiosa, la narración de cuentos y el adorno de espacios 
             sagrados. A continuación se muestran algunos tipos y estilos notables de 
             pinturas de la Edad Media:
-        </p>
+        </p><br><br><br><br><br><br><br>
         <h2 style="text-align: center;"> Pinturas De La Edad Media <a href="login.php" style="font-size: 16px;">Editar</a> </h2>
-    <?php 
+      
+        <?php 
 
-        // datos de la DB
-        $servidor = "localhost";
-        $usuario = "root";
-        $clave = "";
-        $base = "gestion";
+            // datos de la DB
+            $servidor = "localhost";
+            $usuario = "root";
+            $clave = "";
+            $base = "gestion";
 
-        // conexion a DB
-        $Conexion = mysqli_connect($servidor,$usuario,$clave,$base);
+            // conexion a DB
+            $Conexion = mysqli_connect($servidor,$usuario,$clave,$base);
 
-        // creando la cadena de consulta
-        $Cadena = "SELECT * FROM pinturaem WHERE 1";
-        $Consulta = Mysqli_query($Conexion, $Cadena );
+            // creando la cadena de consulta
+            $Cadena = "SELECT * FROM pinturaem WHERE 1";
+            $Consulta = Mysqli_query($Conexion, $Cadena );
 
-        echo "<table  cellspacing=2 cellpadding=3 >"; 
+            echo "<table  cellspacing=2 cellpadding=3 >"; 
 
-            echo "<tr>";
-                echo "<th>N°</th>";
-                echo "<th>Estilo</th>";
-                echo "<th>Tiempo</th>";
-                echo "<th>Descripción</th>";
-            echo "</tr>";
+                echo "<tr>";
+                    echo "<th>N°</th>";
+                    echo "<th>Estilo</th>";
+                    echo "<th>Tiempo</th>";
+                    echo "<th>Descripción</th>";
+                echo "</tr>";
 
 
 
-        while($Registro = Mysqli_fetch_row($Consulta)){
-            echo "<tr>";
+            while($Registro = Mysqli_fetch_row($Consulta)){
+                echo "<tr>";
 
-            //echo $Registro[0]." ".$Registro[1]." ".$Registro[2]."<br>";
-            foreach ($Registro as $Campo) {
-                echo "<td>".$Campo."</td>";
+                //echo $Registro[0]." ".$Registro[1]." ".$Registro[2]."<br>";
+                foreach ($Registro as $Campo) {
+                    echo "<td>".$Campo."</td>";
+                }
+
+                echo "</tr>";
+                //echo "<br>";
             }
 
-            echo "</tr>";
-            //echo "<br>";
-        }
 
+            echo "</table>";
 
-        echo "</table>";
-
-    ?>
+        ?>
 
         <h2>Elementos característicos de la pintura medieval</h2>
 
@@ -170,4 +169,5 @@
       
         </article>
 
- </main>
+
+</main>
