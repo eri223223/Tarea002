@@ -37,6 +37,7 @@
             <img src="views/src/edad-moderna.png" class="img-edad-moderna" alt="moderna">
             <br><br><br>
         </section>
+        
         <br><br><br><br>
 
         <section id="edad-contemporanea">

@@ -20,11 +20,11 @@
 <body>
     <header class="header">
             <div class="logo" href="<?php echo APP_URL ?>../index.php">
-                <img src="views/src/logo.png" alt="LODZ">
+                <a href="index.php"><img src="views/src/logo.png" alt="LODZ"></a>
             </div>
             <nav>
                 <ul class="links">
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="index.php">Inicio</a></li>
                     <li><a href="#">Nosotros</a></li>
                 </ul>
             </nav>
