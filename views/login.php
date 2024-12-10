@@ -1,16 +1,38 @@
 <main id="login">
     
     <div class="login-container">
-        <h2>Iniciar Sesión</h2>
+        
         <form action="login.php" method="POST">
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <br>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
+            <h2>Iniciar Sesión</h2>
+            <div class="input-box">
+                <input type="text" id="username" name="username" 
+                required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box"> 
+            <input type="password" id="password" name="password" 
+            required>
+            <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">recordar contra</label>
+                <a href="#">Olvidase la contra?</a>
+            </div><br>
+
+            <button type="submit" class="btn">Ingresar</button>
             
-            <button type="submit">Ingresar</button>
+            <div class="register-link">
+                <p>¿No tienes cuenta? <a 
+                href="register.php">Registrate</a></p>
+            </div>
+
+            <?php 	
+
+                error_reporting(0);
+                $Mensaje = $_GET['error'];
+                echo $Mensaje;
+
+            ?>
         </form>
     </div>
 </main>
