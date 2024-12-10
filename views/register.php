@@ -28,7 +28,7 @@
            
                  <div class="register-link">
                     <p>¿Ya tienes cuenta? <a href="login.php">Logueate</a></p>
-            </div>
+                 </div>
             </form>
             
         </div>

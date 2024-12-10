@@ -79,32 +79,32 @@ body{
     transform: scale(1.1);
 }
 
-#cuerpo .present{
+#index .present{
     text-align: center;
     font-weight: 600;
     font-size: 70px;
 }
 
 
-#cuerpo .sub-present{
+#index .sub-present{
     text-align: center;
     padding: 10px;
     font-weight: 500;
 }
 
-
-#edad-media{
-    
+/* Asegura que el contenedor se ajuste al contenido flotante */
+#index .edad-media{
+    background-color:  rgba(0, 0, 0, 0.5);
     overflow: auto; /* Asegura que el contenedor se ajuste al contenido flotante */
     padding-left: 78px;
     padding-top: 20px;
 }
 
-#edad-media h3{
+#index .edad-media h3{
     font-size: 30px;
 }
 
-#edad-media .img-edad-media {
+#index .edad-media .img-edad-media {
     float: right; /* Mueve la imagen a la derecha */
     margin: 50px; /* Ajusta los márgenes para darle espacio */
     width: 470px;
@@ -114,7 +114,7 @@ body{
     margin-top: -240px; /* Sube la imagen */    
 }
 
-#edad-media .btn-edad-media{
+#index .edad-media .btn-edad-media{
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
@@ -128,18 +128,18 @@ body{
 
 
 
-#edad-moderna{
+#index .edad-moderna{
     background-color:  rgba(0, 0, 0, 0.5);
     overflow: auto; /* Asegura que el contenedor se ajuste al contenido flotante */
     padding-left: 78px;
     padding-top: 20px;
 }
 
-#edad-moderna h3{
+#index .edad-moderna h3{
     font-size: 30px;
 }
 
-#edad-moderna .img-edad-moderna{
+#index .edad-moderna .img-edad-moderna{
     float: right; /* Mueve la imagen a la derecha */
     margin: 50px; /* Ajusta los márgenes para darle espacio */
     width: 470px;
@@ -149,7 +149,7 @@ body{
     margin-top: -240px; /* Sube la imagen */    
 }
 
-#edad-moderna .btn-edad-moderna{
+#index .edad-moderna .btn-edad-moderna{
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
@@ -163,18 +163,18 @@ body{
 
 
 
-#edad-contemporanea{
+#index .edad-contemporanea{
     background-color:  rgba(0, 0, 0, 0.5);
     overflow: auto; /* Asegura que el contenedor se ajuste al contenido flotante */
     padding-left: 78px;
     padding-top: 20px;
 }
 
-#edad-contemporanea h3{
+#index .edad-contemporanea h3{
     font-size: 30px;
 }
 
-#edad-contemporanea .img-edad-contemporanea{
+#index .edad-contemporanea .img-edad-contemporanea{
     float: right; /* Mueve la imagen a la derecha */
     margin: 50px; /* Ajusta los márgenes para darle espacio */
     width: 470px;
@@ -184,7 +184,7 @@ body{
     margin-top: -240px; /* Sube la imagen */    
 }
 
-#edad-contemporanea .btn-edad-contemporanea{
+#index .edad-contemporanea .btn-edad-contemporanea{
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
@@ -196,24 +196,18 @@ body{
     cursor: pointer;
 }
 
-
-
-
-
-
-
-#renacimiento{
+#index .renacimiento{
     background-color:  rgba(0, 0, 0, 0.5);
     overflow: auto; /* Asegura que el contenedor se ajuste al contenido flotante */
     padding-left: 78px;
     padding-top: 20px;
 }
 
-#renacimiento h3{
+#index .renacimiento h3{
     font-size: 30px;
 }
 
-#renacimiento .img-renacimiento{
+#index .renacimiento .img-renacimiento{
     float: right; /* Mueve la imagen a la derecha */
     margin: 50px; /* Ajusta los márgenes para darle espacio */
     width: 470px;
@@ -223,7 +217,7 @@ body{
     margin-top: -240px; /* Sube la imagen */    
 }
 
-#renacimiento .btn-renacimiento{
+#index .renacimiento .btn-renacimiento{
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;

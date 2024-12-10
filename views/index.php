@@ -1,4 +1,4 @@
-<main id="cuerpo">
+<main id="index">
         <div class="cabezera">
             <div class="sub-top">
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -7,7 +7,8 @@
                 <div class="sub-present">La Enciclopedia de Arte e Historia Moderna</div>
             </div>
         </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <section id="edad-media">
+
+        <section class="edad-media">
             <br><br><br>
             <h3>Edad Media</h3>
             <br>
@@ -23,7 +24,7 @@
         </section>
         <br><br><br><br>
 
-        <section id="edad-moderna">
+        <section class="edad-moderna">
             <br><br><br>
             <h3>Edad Moderna</h3>
             <br>
@@ -40,7 +41,7 @@
         
         <br><br><br><br>
 
-        <section id="edad-contemporanea">
+        <section class="edad-contemporanea">
             <br><br><br>
             <h3>Edad Contemporánea</h3>
             <br>
@@ -57,7 +58,7 @@
         </section>
         <br><br><br><br>
 
-        <section id="renacimiento">
+        <section class="renacimiento">
             <br><br><br>
             <h3>Renacimiento</h3>
             <br>

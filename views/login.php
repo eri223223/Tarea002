@@ -2,7 +2,7 @@
     
     <div class="login-container">
         
-        <form action="login.php" method="POST">
+        <form action="driver_login.php" method="POST">
             <h2>Iniciar Sesión</h2>
             <div class="input-box">
                 <input type="text" id="username" name="username" 
