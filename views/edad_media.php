@@ -19,7 +19,7 @@
             $servidor = "localhost";
             $usuario = "root";
             $clave = "";
-            $base = "gestion";
+            $base = "tarea002";
 
             // conexion a DB
             $Conexion = mysqli_connect($servidor,$usuario,$clave,$base);
