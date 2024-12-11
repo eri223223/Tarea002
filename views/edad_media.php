@@ -165,7 +165,7 @@
             y desarrollos artísticos que evolucionaron con el tiempo. El <strong>arte de la Edad Media</strong> sirvió como sólida base 
             sobre la cual los artistas del Renacimiento construyeron, incorporando y transformando tradiciones e ideas anteriores en el 
             arte innovador y revolucionario del Renacimiento.</p>
-        <br>
+        <br><br><br>
     </article>
 
 
