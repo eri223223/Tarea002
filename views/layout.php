@@ -25,7 +25,7 @@
             <nav>
                 <ul class="links">
                     <li><a href="index.php">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="about_us.php">Nosotros</a></li>
                 </ul>
             </nav>
             <a href="#" class="btn"><button>Contacto</button></a>

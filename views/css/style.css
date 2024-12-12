@@ -529,3 +529,19 @@ body{
     display: block; /* Mejora la compatibilidad */
     margin-top: -230px; /* Sube la imagen */    
 }
+
+
+#about-us .about-us-01{
+    margin: 5% 20%;
+    text-align: center;
+    background-color: rgb(255, 255, 255, .22);
+    padding: 2% 5% 2% 5%;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: #fff;
+}
+
+
+#about-us .about-us-01 h3{
+    font-size: 30px;
+}

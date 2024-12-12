@@ -32,7 +32,7 @@
                dividir la Historia <br> Universal, entre los siglos XV y XVIII, después
                de la Edad Media, y antes de la <br> llamada Edad Contemporánea. <br><br></p>
 
-            <a href="<?php echo APP_URL ?>edad_moderna.php""><button class="btn-edad-moderna">Leer Más...</button></a>
+            <a href="<?php echo APP_URL ?>edad_moderna.php"><button class="btn-edad-moderna">Leer Más...</button></a>
             <br><br><br>
             <img src="views/src/edad-moderna.png" class="img-edad-moderna" alt="moderna">
             <br><br><br>
