@@ -1,6 +1,6 @@
 <main id="edad-media">
     <article style="margin-right: 120px; margin-left: 120px; margin: 80px; background-color: #000000d9;    color: white;   padding: 40px;    border-radius: 25px;">
-        <br><br><br><br>
+        <br><br><br>
         <h3 style="font-size: 30px;">Pinturas de la Edad Media</h3> <br><br>
         <p>La Edad Media, también conocida como período medieval, abarcó <br>aproximadamente
             del siglo V al XV en la historia europea. Durante <br>esta época, el arte jugó un papel
