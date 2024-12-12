@@ -60,16 +60,15 @@
             $Conexion = mysqli_connect($servidor,$usuario,$clave,$base);
 
             // creando la cadena de consulta
-            $Cadena = "SELECT * FROM pinturaem WHERE 1";
+            $Cadena = "SELECT * FROM `periodo_edad_moderna` WHERE 1";
             $Consulta = Mysqli_query($Conexion, $Cadena );
 
-            echo "<table  cellspacing=2 cellpadding=3 >"; 
+            echo " table border = 2 cellspacing=2 cellpadding=3 >"; 
 
                 echo "<tr>";
                     echo "<th>N°</th>";
-                    echo "<th>Estilo</th>";
-                    echo "<th>Tiempo</th>";
-                    echo "<th>Descripción</th>";
+                    echo "<th>Periodo</th>";
+                    echo "<th>Siglo</th>";
                 echo "</tr>";
 
 
