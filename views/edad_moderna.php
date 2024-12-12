@@ -45,11 +45,11 @@
             libertad humana, pero simultáneamente nace la inquisición como sistema de control de creencias.
         </p>
         <br><br>
-
+    
         <h2 style="text-align: center; font-size:25px">Artistas de la Edad Media <a href="login.php" style="font-size: 16px;" >Editar</a> </h2>
         <br><br><br><br>
         <?php 
-
+            
             // datos de la DB
             $servidor = "localhost";
             $usuario = "root";
@@ -123,62 +123,29 @@
         <br><br>
         <h4 style="font-size:25px">Principales artistas del arte en la edad moderna</h4>
         <br><br>
-        <p>El inicio del Renacimiento, ubicable en el quattrocento italiano, encontramos los primeros pintores y
+        <p style="text-align:left;">El inicio del Renacimiento, ubicable en el quattrocento italiano, encontramos los primeros pintores y
             escultores que empiezan a estudiar la proporción, la perspectiva y rescatan formas arquitectónicas
             consideradas clásicas.
         </p> <br>
 
-        <p>Entre los más destacados: Filippo Brunelleschi, Lorenzo Ghiberti, Fra Angélico, Donatello, Masaccio, Paolo
+        <p style="text-align:left;">Entre los más destacados: Filippo Brunelleschi, Lorenzo Ghiberti, Fra Angélico, Donatello, Masaccio, Paolo
             Uccello, Piero della Francesca, Domenico Ghirlandaio, Andrea Mantegna entre otros.</p>
         <br><br><br><br>
-
-
-
-        <h2 style="text-align: center; font-size:25px">Artistas de la Edad Media <a href="login.php" style="font-size: 16px;" >Editar</a> </h2>
-        <br><br><br>
-        <?php 
-
-            // datos de la DB
-            $servidor = "localhost";
-            $usuario = "root";
-            $clave = "";
-            $base = "tarea002";
-
-            // conexion a DB
-            $Conexion = mysqli_connect($servidor,$usuario,$clave,$base);
-
-            // creando la cadena de consulta
-            $Cadena = "SELECT * FROM pinturaem WHERE 1";
-            $Consulta = Mysqli_query($Conexion, $Cadena );
-
-            echo "<table  cellspacing=2 cellpadding=3 >"; 
-
-                echo "<tr>";
-                    echo "<th>N°</th>";
-                    echo "<th>Estilo</th>";
-                    echo "<th>Tiempo</th>";
-                    echo "<th>Descripción</th>";
-                echo "</tr>";
-
-
-
-            while($Registro = Mysqli_fetch_row($Consulta)){
-                echo "<tr>";
-
-                //echo $Registro[0]." ".$Registro[1]." ".$Registro[2]."<br>";
-                foreach ($Registro as $Campo) {
-                    echo "<td>".$Campo."</td>";
-                }
-
-                echo "</tr>";
-                //echo "<br>";
-            }
-
-
-            echo "</table>";
-
-        ?>
-
+        <ol>
+             <li style="text-align:left;"><strong>Leonardo da Vinci (1452-1519):</strong> Renombrado por su genialidad en diversas disciplinas, da Vinci es célebre por pinturas icónicas como “La Mona Lisa” y “La Última
+                Cena”, así como por sus estudios científicos y de anatomía.</li>
+             <li style="text-align:left;"><strong>Miguel Ángel Buonarroti (1475-1564):</strong> Conocido por su destreza en la pintura, la escultura y la arquitectura, creó obras maestras como la “Capilla Sixtina” y 
+             la escultura “David”.</li>
+             <li style="text-align:left;"><strong>Rafael Sanzio (1483-1520):</strong> Reconocido por su armonía y perfección en la pintura, Rafael dejó una huella duradera con obras como “La Escuela de Atenas” y “La 
+             irgen del Jilguero”.</li>
+             <li style="text-align:left;"><strong>Tiziano Vecellio (c. 1488-1576):</strong> Renovó la pintura veneciana con su uso del color y la pincelada. Sus retratos y obras religiosas, como “Venus del espejo”,
+             son ejemplos destacados.</li>
+             <li style="text-align:left;"><strong>Hieronymus Bosch (1450-1516):</strong> Conocido por sus obras surrealistas y alegóricas, como “El jardín de las delicias”, Bosch influyó en el arte del simbolismo y el surrealismo.</li>
+             <li style="text-align:left;"><strong>Pieter Bruegel el Viejo (c. 1525-1569):</strong> Maestro de la pintura de paisajes y escenas de la vida cotidiana, sus obras, como “La torre de Babel”,
+             capturan la vida y la sociedad de su época.</li>
+             <li style="text-align:left;"><strong>El Greco (1541-1614):</strong> Sus pinturas alargadas y estilizadas, con colores vibrantes, ejemplifican su estilo distintivo. Obras como “El entierro del Conde de Orgaz”
+             reflejan su visión espiritual.</li>
+        </ol>
 
 
         <br><br><br><br>
