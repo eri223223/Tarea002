@@ -19,13 +19,15 @@ $query = "SELECT `id_em`, `Estilo`, `Tiempo`, `Descripcion` FROM `pinturaem` WHE
 $resultado = mysqli_query($conexion, $query);
 ?>
 
-<h2>Listado de Usuarios</h2>
-<table border="1">
+<main id="listado_em">
+
+<h2>Arte en pinturas de la Edad Media</h2>
+<table border="2">
     <tr>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>DNI</th>
-        <th>Acciones</th>
+        <th>n°</th>
+        <th>estilo</th>
+        <th> tiempo</th>
+        <th>descripcion</th>
     </tr>
     <?php while ($fila = mysqli_fetch_assoc($resultado)) { ?>
         <tr>
@@ -34,8 +36,14 @@ $resultado = mysqli_query($conexion, $query);
             <td><?php echo $fila['Tiempo']; ?></td>
             <td><?php echo $fila['Descripcion']; ?></td>
             <td>
-                <a href="editar.php?id=<?php echo $fila['id_em']; ?>">Editar</a>
+                <a href="editar_em.php?id=<?php echo $fila['id_em']; ?>">Editar</a>
             </td>
         </tr>
-    <?php } ?>
-</table>
+    <?php
+ } ?>
+</table> <br>
+<a href="edad_media.php"><button class="btn">volver</button></a>
+<a href="#"><button class="btn">Añadir</button></a>
+<a href="#"><button class="btn">Eliminar</button></a>
+
+</main>

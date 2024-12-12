@@ -15,16 +15,17 @@ if (!$conexion) {
 
 // Actualizar los datos del usuario
 $id = $_POST['id'];
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$dni = $_POST['dni'];
+$est = $_POST['estilo'];
+$time = $_POST['tiempo'];
+$des = $_POST['desc'];
 
-$query = "UPDATE usuarios SET nombre = '$nombre', apellido = '$apellido', dni = '$dni' WHERE id = $id";
+$query = " UPDATE `pinturaem` SET `Estilo`='$est',`Tiempo`='$time',`Descripcion`='$des' WHERE id_em = $id";
+
+
 $resultado = mysqli_query($conexion, $query);
 
 if ($resultado) {
-    echo "la informacion a actualizado correctamente.";
-    echo "<br><a href='listado.php'>Volver al listado</a>";
+    header("location: edad_media.php");
 } else {
     echo "Error al actualizar el usuario.";
 }

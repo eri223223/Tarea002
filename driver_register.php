@@ -31,7 +31,7 @@ $ResConsIns = MySqli_query( $ResConec , $cadena );
 
 if($ResConsIns){
 	echo "la insercion a la DB ha sido exitosa";
-	header("location:edad_media.php");
+	header("location:listado_em.php");
    }else{
    	echo "la insercion a la DB ha fallado";
    	echo "<br>";

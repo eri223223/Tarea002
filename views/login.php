@@ -20,19 +20,17 @@
             </div><br>
 
             <button type="submit" class="btn">Ingresar</button>
-            
+             <?php 	
+                if (isset($_GET['mensaje'])) {
+                    echo "<p style='color: red; text-align:center; 
+                    margin: 18px 0px 0px 0px;'>" . $_GET['mensaje'] . "</p>";
+                }
+            ?>
             <div class="register-link">
                 <p>¿No tienes cuenta? <a 
                 href="register.php">Registrate</a></p>
             </div>
-
-            <?php 	
-
-                error_reporting(0);
-                $Mensaje = $_GET['error'];
-                echo $Mensaje;
-
-            ?>
+            
         </form>
     </div>
 </main>

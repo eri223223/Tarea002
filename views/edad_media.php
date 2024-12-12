@@ -9,7 +9,7 @@
             algunos tipos y estilos notables de pinturas de la Edad Media:</p>
             <img src="views/src/edad-media.jpg" class="img-edad-media-01" alt="media">
             <br><br><br><br><br><br><br><br><br>
-        <h2 style="text-align: center; font-size:25px"> Arte en pinturas de la Edad Media <a href="login.php" style="font-size: 16px;">Editar</a> </h2>
+        <h2 style="text-align: center; font-size:25px"> Arte en pinturas de la Edad Media <a href="login.php" style="font-size: 16px;" >Editar</a> </h2>
         <br><br><br>
         <?php 
 
