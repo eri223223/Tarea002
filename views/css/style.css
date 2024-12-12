@@ -488,6 +488,14 @@ body{
     margin-top: -230px; /* Sube la imagen */    
 }
 
+#edad-media .edadMedia{
+    margin: 4% 13% 13%  13%; 
+    background-color: #000000d9;    
+    color: white;   padding: 40px;    
+    border-radius: 25px;
+    padding: 5%;
+}
+
 #listado_em{
      margin: 40px 20%;
     text-align: center;
@@ -529,6 +537,14 @@ body{
     display: block; /* Mejora la compatibilidad */
     margin-top: -230px; /* Sube la imagen */    
 }
+#edad-moderna .edadModerna{
+    margin: 4% 13% 13%  13%; 
+    background-color: #000000d9;    
+    color: white;   padding: 40px;    
+    border-radius: 25px;
+    padding: 5%;
+}
+
 
 
 #about-us .about-us-01{

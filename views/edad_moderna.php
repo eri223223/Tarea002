@@ -1,5 +1,5 @@
 <main id="edad-moderna">
-    <article style="margin-right: 120px; margin-left: 120px; margin: 80px; background-color: #000000d9;    color: white;   padding: 40px;    border-radius: 25px;">
+    <div class="edadModerna">
         <br><br><br>
         <h3 style="font-size: 30px;">Pinturas de la Edad Moderna</h3> <br><br>
         <p>La Edad Moderna es el tercer periodo histórico en el que se suele <br>
@@ -45,9 +45,7 @@
             libertad humana, pero simultáneamente nace la inquisición como sistema de control de creencias.
         </p>
         <br><br>
-    
-        <h2 style="text-align: center; font-size:25px">Artistas de la Edad Media <a href="login.php" style="font-size: 16px;" >Editar</a> </h2>
-        <br><br><br><br>
+        <div class="cuadro">
         <?php 
             
             // datos de la DB
@@ -63,7 +61,7 @@
             $Cadena = "SELECT * FROM `periodo_edad_moderna` WHERE 1";
             $Consulta = Mysqli_query($Conexion, $Cadena );
 
-            echo " table border = 2 cellspacing=2 cellpadding=3 >"; 
+            echo " <table border = 2 cellspacing=2 cellpadding=3 >"; 
 
                 echo "<tr>";
                     echo "<th>N°</th>";
@@ -89,7 +87,7 @@
             echo "</table>";
 
         ?>
-
+        </div>
 
         <br><br><br><br>
         <h4 style="font-size:25px">Características del arte en la edad moderna</h4>
@@ -167,7 +165,7 @@
             de arte más importantes del arte de la era moderna.
         </p>
         <br><br><br>
-    </article>
+        </div>
 
 
 </main>

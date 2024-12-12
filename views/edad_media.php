@@ -1,5 +1,5 @@
 <main id="edad-media">
-    <article style="margin-right: 120px; margin-left: 120px; margin: 80px; background-color: #000000d9;    color: white;   padding: 40px;    border-radius: 25px;">
+    <div class="edadMedia">
         <br><br><br>
         <h3 style="font-size: 30px;">Pinturas de la Edad Media</h3> <br><br>
         <p>La Edad Media, también conocida como período medieval, abarcó <br>aproximadamente
@@ -166,7 +166,7 @@
             sobre la cual los artistas del Renacimiento construyeron, incorporando y transformando tradiciones e ideas anteriores en el 
             arte innovador y revolucionario del Renacimiento.</p>
         <br><br><br>
-    </article>
+            </div>
 
 
 </main>
