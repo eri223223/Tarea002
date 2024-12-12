@@ -43,7 +43,7 @@ $resultado = mysqli_query($conexion, $query);
  } ?>
 </table> <br>
 <a href="edad_media.php"><button class="btn">volver</button></a>
-<a href="#"><button class="btn">Añadir</button></a>
-<a href="#"><button class="btn">Eliminar</button></a>
+<a href="añadir_em.php"><button class="btn">Añadir</button></a>
+<a href="eliminar_em.php"><button class="btn">Eliminar</button></a>
 
 </main>
