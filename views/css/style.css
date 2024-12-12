@@ -537,6 +537,7 @@ body{
     display: block; /* Mejora la compatibilidad */
     margin-top: -230px; /* Sube la imagen */    
 }
+
 #edad-moderna .edadModerna{
     margin: 4% 13% 13%  13%; 
     background-color: #000000d9;    
@@ -561,3 +562,24 @@ body{
 #about-us .about-us-01 h3{
     font-size: 30px;
 }
+
+#edad-contemporanea .edadCont{
+    margin: 4% 13% 13%  13%; 
+    background-color: #000000d9;    
+    color: white;   padding: 40px;    
+    border-radius: 25px;
+    padding: 5%;
+}
+
+#edad-contemporanea .img-edad-contemporanea-01{
+    float: right; /* Mueve la imagen a la derecha */
+    margin: 50px; /* Ajusta los márgenes para darle espacio */
+    width: 470px;
+    height: 270px;
+    object-fit: cover;
+    display: block; /* Mejora la compatibilidad */
+    margin-top: -240px; /* Sube la imagen */ 
+}
+
+
+
