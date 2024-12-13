@@ -1,5 +1,5 @@
-<main id="edad-moderna">
-    <div class="edadModerna">
+<main id="edad-contemporanea">
+    <div class="edadCont">
         <br><br><br>
         <h3 style="font-size: 30px;">Pinturas de la Edad Moderna</h3> <br><br>
         <p>La Edad Moderna es el tercer periodo histórico en el que se suele <br>
@@ -10,7 +10,7 @@
         razón se han convertido en los valores de la modernidad. Esto <br>
         la asemeja a la Antigüedad y a la Época Clásica, en la que <br>
         florecieron la filosofía y las Bellas Artes. </p>
-            <img src="views/src/edad-moderna.png" class="img-edad-moderna-01" alt="moderna">
+            <img src="views/src/edad-contemporanea.jpg" class="img-edad-contemporanea-01" alt="contemporanea">
 
         <br><br><br><br><br><br>
         <h2 style="font-size:30px">Breve historia del arte en la edad moderna</h2>
@@ -45,7 +45,9 @@
             libertad humana, pero simultáneamente nace la inquisición como sistema de control de creencias.
         </p>
         <br><br>
-        <div class="cuadro">
+    
+        <h2 style="text-align: center; font-size:25px">Artistas de la Edad Media <a href="login.php" style="font-size: 16px;" >Editar</a> </h2>
+        <br><br><br><br>
         <?php 
             
             // datos de la DB
@@ -58,15 +60,16 @@
             $Conexion = mysqli_connect($servidor,$usuario,$clave,$base);
 
             // creando la cadena de consulta
-            $Cadena = "SELECT * FROM `periodo_edad_moderna` WHERE 1";
+            $Cadena = "SELECT * FROM pinturaem WHERE 1";
             $Consulta = Mysqli_query($Conexion, $Cadena );
 
-            echo " <table border = 2 cellspacing=2 cellpadding=3 >"; 
+            echo "<table  cellspacing=2 cellpadding=3 >"; 
 
                 echo "<tr>";
                     echo "<th>N°</th>";
-                    echo "<th>Periodo</th>";
-                    echo "<th>Siglo</th>";
+                    echo "<th>Estilo</th>";
+                    echo "<th>Tiempo</th>";
+                    echo "<th>Descripción</th>";
                 echo "</tr>";
 
 
@@ -87,7 +90,7 @@
             echo "</table>";
 
         ?>
-        </div>
+
 
         <br><br><br><br>
         <h4 style="font-size:25px">Características del arte en la edad moderna</h4>
@@ -165,7 +168,7 @@
             de arte más importantes del arte de la era moderna.
         </p>
         <br><br><br>
-        </div>
+    </div>
 
 
 </main>
